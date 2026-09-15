@@ -595,10 +595,8 @@ body.menu-open .mobilemenu a{opacity:1;transform:none}
 <a href="#/about/leadership">Leadership</a>
 <a href="#/home/green-ammonia">Green Ammonia</a>
 <a href="#/technology">Technology</a>
-
 <a href="#/home/applications">Applications</a>
 <a href="#/home/sustainability">Sustainability</a>
-
 <a href="#/contact">Contact</a>
 </nav>
 <!-- ============================================================
@@ -1017,7 +1015,7 @@ body.menu-open .mobilemenu a{opacity:1;transform:none}
 <div>
 <p class="label">Andhra Pradesh, India</p>
 <h2>Born in Andhra Pradesh. Built for a global market.</h2>
-<p class="lede" style="margin-top:30px">Located in Andhra Pradesh, AP Green Molecules is building around India's growing renewable-energy ecosystem and the region's strong agricultural, industrial and logistics potential.</p>
+<p class="lede" style="margin-top:30px">The first identified project location is in Srikakulam, Andhra Pradesh, positioned on the state's north-eastern coast with access to renewable-energy, industrial and logistics opportunities.</p>
 <ul class="maplist">
 <li>Abundant solar potential</li>
 <li>Renewable-energy ecosystem</li>
@@ -1031,18 +1029,22 @@ body.menu-open .mobilemenu a{opacity:1;transform:none}
 </a></p>
 </div>
 <div class="map">
-<svg aria-label="Stylised map of Andhra Pradesh showing its coastline on the Bay of Bengal" role="img" viewbox="0 0 460 560">
+<svg aria-label="Map of Andhra Pradesh with Srikakulam highlighted on the north-east coast" role="img" viewbox="0 0 460 560">
 <defs>
 <lineargradient id="landfill" x1="0" x2="1" y1="0" y2="1">
 <stop offset="0" stop-color="#0F5132" stop-opacity=".55"></stop>
 <stop offset="1" stop-color="#0B3D2E" stop-opacity=".2"></stop>
 </lineargradient>
+<radialgradient cx="50%" cy="50%" id="apglow" r="50%">
+<stop offset="0%" stop-color="#C8A96B" stop-opacity=".35"></stop>
+<stop offset="100%" stop-color="#C8A96B" stop-opacity="0"></stop>
+</radialgradient>
 </defs>
 <g opacity=".22" stroke="#7FA68A" stroke-width=".6">
 <path d="M0 80H460M0 160H460M0 240H460M0 320H460M0 400H460M0 480H460"></path>
 <path d="M60 0V560M140 0V560M220 0V560M300 0V560M380 0V560"></path>
 </g>
-<!-- Andhra Pradesh outline, plotted from state boundary coordinates (simplified) -->
+<!-- full Andhra Pradesh outline -->
 <path d="M423 95 L381 43 L303 114 L250 179 L215 205 L167 270 L123 283 L84 303 L40 342 L32 400 L54 452 L103 472 L147 517 L191 433 L206 335 L250 277 L303 238 L347 186 L391 147 Z" fill="url(#landfill)" stroke="#7FA68A" stroke-linejoin="round" stroke-width="1.4"></path>
 <!-- coastline on the Bay of Bengal -->
 <path d="M147 517 L191 433 L206 335 L250 277 L303 238 L347 186 L391 147 L423 95" fill="none" opacity=".9" stroke="#C8A96B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
@@ -1054,22 +1056,36 @@ body.menu-open .mobilemenu a{opacity:1;transform:none}
 <path d="M230 250 L200 300 L150 330 L110 300 M200 300 L160 395 M150 330 L160 395 M230 250 L265 290 M110 300 L90 360 M90 360 L160 395"></path>
 </g>
 <g fill="#C8DCCF" opacity=".55">
-<circle cx="230" cy="250" r="2.8"></circle><circle cx="200" cy="300" r="2.8"></circle><circle cx="150" cy="330" r="2.8"></circle>
-<circle cx="110" cy="300" r="2.4"></circle><circle cx="160" cy="395" r="2.4"></circle><circle cx="90" cy="360" r="2.2"></circle><circle cx="265" cy="290" r="2.2"></circle>
+<circle cx="230" cy="250" r="2.8"></circle>
+<circle cx="200" cy="300" r="2.8"></circle>
+<circle cx="150" cy="330" r="2.8"></circle>
+<circle cx="110" cy="300" r="2.4"></circle>
+<circle cx="160" cy="395" r="2.4"></circle>
+<circle cx="90" cy="360" r="2.2"></circle>
+<circle cx="265" cy="290" r="2.2"></circle>
 </g>
-<!-- project marker: location to be confirmed -->
-<g transform="translate(196,318)">
+<!-- glow around Srikakulam -->
+<circle cx="383" cy="100" fill="url(#apglow)" r="28"></circle>
+<!-- active marker at Srikakulam -->
+<g transform="translate(383,100)">
 <circle fill="#C8A96B" r="7"></circle>
-<circle fill="none" opacity=".7" r="16" stroke="#C8A96B" stroke-width="1.2">
-<animate attributename="r" dur="3.4s" repeatcount="indefinite" values="10;30"></animate>
-<animate attributename="opacity" dur="3.4s" repeatcount="indefinite" values=".7;0"></animate>
+<circle fill="none" opacity=".75" r="16" stroke="#C8A96B" stroke-width="1.2">
+<animate attributename="r" dur="3.2s" repeatcount="indefinite" values="10;30"></animate>
+<animate attributename="opacity" dur="3.2s" repeatcount="indefinite" values=".75;0"></animate>
 </circle>
-<line opacity=".7" stroke="#C8A96B" stroke-width="1" x1="11" x2="58" y1="-7" y2="-52"></line>
-<text fill="#C8A96B" font-family="Manrope" font-size="10.5" font-weight="700" letter-spacing="1.6" x="64" y="-56">PROJECT REGION</text>
-<text fill="#7FA68A" font-family="Inter" font-size="10" x="64" y="-40">Site to be confirmed</text>
+<circle fill="none" opacity=".38" r="16" stroke="#C8A96B" stroke-width="1.2">
+<animate attributename="r" begin="1.3s" dur="3.2s" repeatcount="indefinite" values="10;26"></animate>
+<animate attributename="opacity" begin="1.3s" dur="3.2s" repeatcount="indefinite" values=".38;0"></animate>
+</circle>
+<!-- label pulled to the left so it stays inside the view -->
+<line opacity=".8" stroke="#C8A96B" stroke-width="1" x1="-10" x2="-90" y1="-6" y2="-52"></line>
+<text fill="#C8A96B" font-family="Manrope" font-size="10.5" font-weight="700" letter-spacing="1.6" text-anchor="end" x="-96" y="-56">SRIKAKULAM</text>
+<text fill="#7FA68A" font-family="Inter" font-size="10" text-anchor="end" x="-96" y="-40">Andhra Pradesh</text>
 </g>
 </svg>
-<p style="font-size:.76rem;color:rgba(245,243,237,.35);margin-top:16px">Map shown for orientation. Exact plant location will be published once confirmed.</p>
+<p style="font-size:.76rem;color:rgba(245,243,237,.35);margin-top:16px">
+  Map shown for orientation. Active location set to Srikakulam, Andhra Pradesh.
+ </p>
 </div>
 </div>
 </section>
@@ -1576,7 +1592,6 @@ body.menu-open .mobilemenu a{opacity:1;transform:none}
 <address style="font-style:normal;font-size:.95rem;color:rgba(245,243,237,.72);line-height:1.9">
             AP Green Molecules<br/>
             Andhra Pradesh, India<br/>
-<a href="mailto:info@apgreenmolecules.com">info@apgreenmolecules.com</a><br/>
 <a href="tel:+919315486669">+91-931-548-6669</a>
 </address>
 </div></div>
